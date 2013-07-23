@@ -48,9 +48,9 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 %defattr(-, root, root, 0755)
 %doc MANIFEST README
 %doc %{_mandir}/man?/*
-%{_libdir}/perl5/vendor_perl/*/*-linux-thread-multi/*
 %dir %{perl_vendorarch}/Math/
 %{perl_vendorarch}/Math/TrulyRandom.pm
+%doc %{perl_vendorarch}/Math/TrulyRandom.pod
 %dir %{perl_vendorarch}/auto/Math/
 %{perl_vendorarch}/auto/Math/TrulyRandom/
 
